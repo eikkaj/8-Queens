@@ -1,1 +1,29 @@
-hello world!
+Worked on solving the 8-Queens problem using a stack for Data Structures at BU 2012
+
+Output should be:
+8, 4
+
+7, 2
+
+6, 7
+
+5, 3
+
+4, 6
+
+3, 8
+
+2, 5
+
+1, 1
+
+
+Challenges:
+What to do during a conflict with a piece that has already reached column 8
+Resolution:
+Pop head, adjust new head to (row, column+1)
+If new head is already at the 8th column, pop that as well
+
+
+
+Jackie Aldama 2012
