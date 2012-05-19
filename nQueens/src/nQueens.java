@@ -117,19 +117,13 @@ public class nQueens implements Stack {
 						queens.pop();
 						head.setColumn(head.getColumn()+1);
 					}
-					
-					System.out.println("Head is at 8, popping and adjusting new head");
 				} else if (!queens.isEmpty() && head.getColumn() !=8) {
-					System.out.println("Adjusting head to " + head.getRow() +", " + (head.getColumn()+1));
-
 					head.setColumn(head.getColumn()+1);
 				}
 			} else if (queens.size() < 8) {
 				System.out.println("Stack isn't full yet");
 				queens.push(queens.size() + 1,1);
 			} else {
-				System.out.println("Success");
-				queens.viewPieces();
 				success = true;
 			}
 		}
@@ -137,7 +131,6 @@ public class nQueens implements Stack {
 	}
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		queens.push(1,1);
 		playChess();
 	}
